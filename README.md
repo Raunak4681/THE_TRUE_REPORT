@@ -1,1 +1,3 @@
 # THE_TRUE_REPORT
+
+After a thorough search of the project, I can conclude that there is no dedicated file containing latitude and longitude points for map navigation. Instead, the map navigation functionality appears to be handled directly in the map component (src/app/map/map.component.ts). The component uses OpenLayers (ol) library for map functionality and currently only contains a single set of coordinates for radar positioning (latitude: 28.6139, longitude: 77.2090). The map implementation allows for dynamic interaction and drawing of polygons, but does not maintain a separate file of predefined navigation points. The geographic data is primarily served through GeoServer WMS layers, with the base map and elevation data being accessed via GeoServer endpoints
